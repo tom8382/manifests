@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="rockchip-linux"
+           fetch="."
+           review="https://github.com/rockchip-linux/" />
+  <default revision="master"
+           remote="rockchip-linux"
+           sync-j="4" />
+
+  <project path="kernel" name="kernel" revision="release-4.4"/>
+  <project path="u-boot" name="u-boot" revision="release"/>
+  <project path="rootfs" name="rk-rootfs-build" />
+  <project path="rkbin" name="rkbin" />
+
+  <project path="build" name="build" revision="debian">
+	  <copyfile dest="README.md" src="README.md"/>
+  </project>
+  
+</manifest>
