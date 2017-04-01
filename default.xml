@@ -2,20 +2,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="rockchip-linux"
+  <remote  name="tom8382"
            fetch="."
-           review="https://github.com/rockchip-linux/" />
+           review="https://github.com/tom8382/" />
   <default revision="master"
-           remote="rockchip-linux"
+           remote="tom8382"
            sync-j="4" />
 
-  <project path="kernel" name="kernel" revision="release-4.4"/>
-  <project path="u-boot" name="u-boot" revision="release"/>
-  <project path="rootfs" name="rk-rootfs-build" />
-  <project path="rkbin" name="rkbin" />
-
-  <project path="build" name="build" revision="debian">
-	  <copyfile dest="README.md" src="README.md"/>
-  </project>
+  <project path="rl" name="rl"/>
   
 </manifest>
